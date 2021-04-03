@@ -1,0 +1,10 @@
+{
+  "development": {
+    "MONGO_URI": "mongodb://127.0.0.1:27017/asean",
+    "secret": "HwrhmoR0VSTNHkUqK+jdGcnc/d/mMCBkBHjMb6bj2+v+iYuC6wqSJZccDP2Q4s90"
+  },
+  "production": {
+    "MONGO_URI": "mongodb+srv://merumart123:merumart123@cluster0.zhqzh.mongodb.net/dev?retryWrites=true&w=majority",
+    "secret": "HwrhmoR0VSTNHkUqK+jdGcnc/d/mMCBkBHjMb6bj2+v+iYuC6wqSJZccDP2Q4s90"
+  }
+}

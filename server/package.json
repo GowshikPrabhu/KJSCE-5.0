@@ -1,0 +1,53 @@
+{
+  "name": "ais-scraper",
+  "version": "1.0.0",
+  "description": "ais scraping script",
+  "main": "server.js",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.2",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.0",
+    "express-rate-limit": "^5.1.3",
+    "express-session": "^1.17.1",
+    "helmet": "^4.1.0",
+    "hpp": "^0.2.3",
+    "http-errors": "^1.8.0",
+    "jest": "^26.4.2",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.13",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "puppeteer": "^1.20.0",
+    "pusher": "^4.0.2",
+    "request": "^2.88.2",
+    "supertest": "^4.0.2",
+    "tor-request": "^2.3.1",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "remark-cli": "^6.0.1",
+    "remark-html": "^9.0.0"
+  },
+  "scripts": {
+    "dev": "DEBUG=true nodemon --watch ./ --watch lib index.js",
+    "heroku-postbuild": "cd client && yarn install && yarn run build",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parse-readme": "remark readme.md -u html -o index.html"
+  },
+  "keywords": [
+    "ais"
+  ]
+}
